@@ -26,6 +26,7 @@ fig = px.choropleth(
 )
 
 app = dash.Dash()
+server = app.server
 app.layout = [
     html.H1(children="Fifa World Cup Winners", style={'textAlign':'center'}),
     dcc.Graph(figure=fig),
